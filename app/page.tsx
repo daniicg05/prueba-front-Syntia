@@ -124,31 +124,52 @@ export default function LandingPage() {
           </section>
 
           {/* FEATURES */}
-          <section id="features" className="py-28">
-            <div className="mx-auto max-w-6xl text-center">
+          <section id="features" className="py-20 bg-muted/40">
+            <div className="mx-auto max-w-6xl text-center px-4">
+
               <h2 className="text-3xl font-bold">Funcionalidades</h2>
+              <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
+                Todo lo necesario para encontrar y gestionar subvenciones de forma eficiente
+              </p>
 
-              <div className="mt-16 grid md:grid-cols-3 gap-8">
-                <Card>
-                  <CardContent className="p-8">
-                    <Sparkles className="mb-4 text-primary" />
-                    IA inteligente
+              <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+                <Card className="group hover:shadow-lg transition">
+                  <CardContent className="p-6 flex flex-col items-center text-center gap-3">
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <Sparkles className="h-6 w-6 text-primary group-hover:scale-110 transition" />
+                    </div>
+                    <h3 className="font-semibold text-base">IA inteligente</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Matching automático de subvenciones según tu proyecto
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardContent className="p-8">
-                    <Database className="mb-4 text-primary" />
-                    Datos oficiales
+                <Card className="group hover:shadow-lg transition">
+                  <CardContent className="p-6 flex flex-col items-center text-center gap-3">
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <Database className="h-6 w-6 text-primary group-hover:scale-110 transition" />
+                    </div>
+                    <h3 className="font-semibold text-base">Datos oficiales</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Información actualizada directamente desde la BDNS
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardContent className="p-8">
-                    <BookOpen className="mb-4 text-primary" />
-                    Guías paso a paso
+                <Card className="group hover:shadow-lg transition">
+                  <CardContent className="p-6 flex flex-col items-center text-center gap-3">
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <BookOpen className="h-6 w-6 text-primary group-hover:scale-110 transition" />
+                    </div>
+                    <h3 className="font-semibold text-base">Guías paso a paso</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Instrucciones claras para solicitar cada subvención
+                    </p>
                   </CardContent>
                 </Card>
+
               </div>
             </div>
           </section>
